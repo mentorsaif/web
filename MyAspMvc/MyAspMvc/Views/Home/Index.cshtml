@@ -12,6 +12,12 @@
 </head>
 <body>
     <div> 
+		@ViewBag.Greeting World (from the view)
+		<p>We are going to have an event. <br/>
+		Please register if you want to attend.<br />
+		Details of the event will be provided later-on
+		</p>
+		@Html.ActionLink("RSVP Now", "RsvpForm");
     </div>
 </body>
 </html>

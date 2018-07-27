@@ -21,6 +21,12 @@ namespace MyAspMvc.Controllers
 
 		public ViewResult Index()
 		{
+			ViewBag.Greeting = DateTime.Now.Hour < 12 ? "Good Morning" : "Good Afternoon";
+			return View();
+		}
+
+		public ViewResult RsvpForm()
+		{
 			return View();
 		}
 	}
