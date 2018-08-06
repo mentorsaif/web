@@ -1,27 +1,55 @@
 ﻿@model MyAspMvc.Models.GuestResponse
 
 @{
-    Layout = null;
+	Layout = null;
 }
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Thanks</title>
+	<link href="~/Content/bootstrap.css" rel="stylesheet" />
+	<link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Thanks</title>
+	<style>
+		body {
+			background-color: #F1F1F1;
+		}
+	</style>
 </head>
 <body>
-    <div> 
+	@{ 
+		try
+		{
+			WebMail.SmtpServer = "";
+			WebMail.SmtpPort = 587;
+			WebMail.EnableSsl = true;
+			WebMail.UserName = "";
+			WebMail.From = "";
+
+			WebMail.Send("party-host@example.com", "RSVP Notificaiton",
+				Model.Name + " is " + ((Model.WillAttent ?? false) ? "" : "not")
+				+ "attending");
+					
+		}
+		catch (Exception)
+		{
+			@:<b>Sorry - we couldn't send the email to confirm your RSVP.</b>
+		}
+	}
+	<div class="text-center">
 		<h1>Thank you, @Model.Name!</h1>
-		@if(Model.WillAttent == true)
-		{
-			@:It's great that you're coming. You will be welcomed.
+		<div class="lead">
+			@if (Model.WillAttent == true)
+			{
+				@:It's great that you're coming. You will be welcomed.
 		}
-		else
-		{
-			@:Sorry to hear that you can't make it, but thanks to letting us know.
+			else
+			{
+				@:Sorry to hear that you can't make it, but thanks to letting us know.
 		}
-    </div>
+		</div>
+	</div>
 </body>
 </html>
