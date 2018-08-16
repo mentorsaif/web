@@ -44,7 +44,7 @@ namespace SyedAspWebApi.Models
 		public void Remove(int id)
 		{
 			Reservation item = Get(id);
-			if(item != null)
+			if (item != null)
 			{
 				data.Remove(item);
 			}
@@ -53,7 +53,7 @@ namespace SyedAspWebApi.Models
 		public bool Update(Reservation item)
 		{
 			Reservation storedItem = Get(item.ReservationId);
-			if(storedItem != null)
+			if (storedItem != null)
 			{
 				storedItem.ClientName = item.ClientName;
 				storedItem.Location = item.Location;

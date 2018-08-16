@@ -7,8 +7,8 @@ using System.Web.Mvc;
 
 namespace MyAspMvc.Controllers
 {
-    public class HomeController : Controller
-    {
+	public class HomeController : Controller
+	{
 		// GET: Home
 		//public ActionResult Index()
 		//{

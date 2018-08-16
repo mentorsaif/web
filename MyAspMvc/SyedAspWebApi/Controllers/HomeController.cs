@@ -3,8 +3,8 @@ using SyedAspWebApi.Models;
 
 namespace SyedAspWebApi.Controllers
 {
-    public class HomeController : Controller
-    {
+	public class HomeController : Controller
+	{
 		private ReservationRepository repo = ReservationRepository.Current;
 
 		public ViewResult Index()
@@ -42,5 +42,5 @@ namespace SyedAspWebApi.Controllers
 				return View("Index");
 			}
 		}
-    }
+	}
 }
