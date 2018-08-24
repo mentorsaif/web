@@ -240,3 +240,9 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/nodejs/npm.cmd
+/nodejs/npm
+/nodejs/node_perfctr_provider.man
+/nodejs/node_etw_provider.man
+/nodejs/nodevars.bat
+/nodejs/node.exe
