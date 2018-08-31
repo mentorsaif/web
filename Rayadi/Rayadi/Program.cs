@@ -14,11 +14,17 @@ namespace Rayadi
 	{
 		public static void Main(string[] args)
 		{
-			CreateWebHostBuilder(args).Build().Run();
+			CreateWebHostBuilder(args)
+				.ConfigureLogging((hostingContext, logging) =>
+				{
+
+				}
+				)
+				.Build().Run();			
 		}
 
 		public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-			WebHost.CreateDefaultBuilder(args)
+			WebHost.CreateDefaultBuilder(args)			
 				.UseStartup<Startup>();
 	}
 }

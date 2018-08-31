@@ -15,6 +15,18 @@ namespace Rayadi
 		// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 		public void ConfigureServices(IServiceCollection services)
 		{
+			//services.AddDbContext<ApplicationDbContext>( options => 
+			//options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+			//	);
+
+			//services.AddIdentity<ApplicationUser, IdentifyRole>()
+			//	.AddEntityFrameworkStores<ApplicationDbContext>()
+			//	.AddDefaultTokenProviders();
+
+			services.AddMvc();
+
+			//services.AddTransient<>(IEmailSender, AuthMessageSender);
+			//services.AddTransient<>(ISmsSender, AuthMessageSender);
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
