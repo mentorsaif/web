@@ -1,10 +1,29 @@
-﻿{
+{
+  "configuration file": {
+    "Logging": {
+      "IncludeScopes": false,
+      "Debug": {
+        "LogLevel": {
+          "Default": "Information"
+        }
+      },
+      "Console": {
+        "LogLevel": {
+          "Microsoft.AspNet.Core": "Warning",
+          "MyCode": "Information"
+        }
+      },
+      "LogLevel": {
+        "Default": "Warning"
+      }
+    }
+  },
   "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:32570",
-      "sslPort": 44391
+      "sslPort": 0
     }
   },
   "profiles": {
@@ -15,16 +34,13 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-			"Rayadi": {
-				"commandName": "Project",
-				"launchBrowser": true,
-				"applicationUrl": "http://localhost:5000;https://localhost:5001",
-				"environmentVariables": {
-					"ASPNETCORE_ENVIRONMENT": "Development"
-				}
-			}
+    "Rayadi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000;https://localhost:5001"
+    }
   }
-
-
-
 }
