@@ -1,0 +1,27 @@
+{
+  "name": "ezin",
+  "description": "ezin",
+  "main": "src/boot.ts",
+  "authors": [
+    "Syed Saif ur Rahman <mentorsaif@hotmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ezin"
+  ],
+  "homepage": "https://github.com/saif137/web",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.1.3",
+    "jquery": "3.3.1",
+    "jquery-validation": "1.17.0",
+    "jquery-validation-unobtrusive": "3.2.9"
+  }
+}

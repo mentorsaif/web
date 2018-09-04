@@ -2,6 +2,20 @@
     ViewData["Title"] = "Home Page";
 }
 
+@section scripts {
+    <script src="~/dist/inline.bundle.js" asp-append-version="true"></script>
+    <script src="~/dist/polyfills.bundle.js" asp-append-version="true"></script>
+    <script src="~/dist/vendor.bundle.js" asp-append-version="true"></script>
+    <script src="~/dist/main.bundle.js" asp-append-version="true"></script>
+}
+
+<div class="navbar bg-inverse">
+    <a class="navbar-brand text-white">@(ViewBag.Message ?? "SPORTS STORE")</a>
+</div>
+<div class="p-1">
+    <app-root></app-root>
+</div>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
