@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { IbtidaComponent } from './ibtida/ibtida.component';
 import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IbtidaComponent,
     UserComponent,
-    UserListComponent
+    UserListComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule
