@@ -24,6 +24,14 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" version="2.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="dist\out-tsc\app\" />
+    <Folder Include="dist\out-tsc\e2e\src\" />
+    <Folder Include="dist\out-tsc\environments\" />
+    <Folder Include="dist\out-tsc\src\app\" />
+    <Folder Include="dist\out-tsc\src\environments\" />
+  </ItemGroup>
+
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptTarget>ES2015</TypeScriptTarget>
     <TypeScriptJSXEmit>None</TypeScriptJSXEmit>

@@ -19,13 +19,13 @@ const options = {
 module.exports = {
   entry: {
     app: PATHS.app,
-    main: "./src\\boot.ts"
+    main: "./src/main.ts"
   },
   output: {
     //path: PATHS.build,
     path: path.join(process.cwd(), "wwwroot/dist"),
     filename: 'bundle.[hash].js',
-    publicPath: "/app/"
+    publicPath: "/src/app/"
   },
   devServer: {
       historyApiFallback: true,
