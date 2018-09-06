@@ -14,6 +14,5 @@
 </form>
 
 <div class="ui grid posts">
-  <app-article>    
-  </app-article>
+  <app-article *ngFor="let article of test" [article]="article" ></app-article>
 </div>
