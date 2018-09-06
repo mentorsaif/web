@@ -1,4 +1,4 @@
-<form class="ui large form segment">
+<form class="container">
   <h3 class="ui header">Add a link</h3>
 
   <div class="field">
@@ -10,9 +10,9 @@
     <input name="link" #newlink>
   </div>
   <button (click)="addArticle(newtitle, newlink)"
-    class="ui positive right floated button">Submit link</button>
+  class="btn btn-primary" tooltip="Submit link" >Submit link</button>
 </form>
 
-<div class="ui grid posts">
-  <app-article *ngFor="let article of test" [article]="article" ></app-article>
+<div class="container">
+  <app-article *ngFor="let article of articles" [article]="article" ></app-article>
 </div>

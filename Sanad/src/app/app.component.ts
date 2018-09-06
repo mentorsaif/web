@@ -9,9 +9,8 @@ import { Article } from './article/article.model';
 
 export class AppComponent {
   articles: Article[];
-  test: [1, 2, 3];
 
-  cosntructor() {
+  constructor() {
     this.articles = [
       new Article('My favourite article','http://myfav.io',3),
       new Article('My bad article','http://mybad.io',2),
