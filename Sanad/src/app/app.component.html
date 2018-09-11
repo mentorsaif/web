@@ -1,4 +1,13 @@
-<form class="container">
+
+<div class="container">
+    <products-list
+    [productList]="products"
+    (onProductSelected)="productWasSelected($event)"
+    >
+    </products-list>
+  </div>
+
+<!-- <form class="container">
   <h3 class="ui header">Add a link</h3>
 
   <div class="field">
@@ -15,4 +24,4 @@
 
 <div class="container">
   <app-article *ngFor="let article of sortedArticles()" [article]="article" ></app-article>
-</div>
+</div> -->
