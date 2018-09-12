@@ -5,6 +5,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './price-display.component.html',
   styleUrls: ['./price-display.component.css']
 })
+
 export class PriceDisplayComponent {
 
   @Input() price: number;
