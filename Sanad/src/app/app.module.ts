@@ -13,10 +13,9 @@ import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { ArticleComponent } from './article/article.component';
 import { fromEventPattern } from 'rxjs';
-import { ProductComponent } from './product/product.component';
 import { ProductsListComponent } from './products-list/products-list.component';
+import { ProductComponent } from './product/product.component';
 import { ProductRowComponent } from './product-row/product-row.component';
-import { ProductImageComponentComponent } from './product-image-component/product-image-component.component';
 import { ProductImageComponent } from './product-image/product-image.component';
 import { PriceDisplayComponent } from './price-display/price-display.component';
 import { ProductDepartmentComponent } from './product-department/product-department.component';
@@ -28,8 +27,8 @@ import { ProductDepartmentComponent } from './product-department/product-departm
     UserComponent,
     UserListComponent,
     ArticleComponent,
-    ProductComponent,
     ProductsListComponent,
+    ProductComponent,
     ProductRowComponent,
     ProductImageComponent,
     PriceDisplayComponent,
