@@ -1,4 +1,30 @@
+<div class="page-header">
+  <div class="container">
+    <h1>Router Sample</h1>
+    <div class="navLinks">
+        <a [routerLink]="['/home']">Home</a>
+        <a [routerLink]="['/about']">about</a>
+        <a [routerLink]="['/contact']">Contact Us</a>
+        |
+        <a [routerLink]="['/products']">Products</a>
+        <a [routerLink]="['/login']">Login</a>
+        <a [routerLink]="['/protected']">Protected</a>
+      </div>
+  </div>
+</div>
 
+<div id="content">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<pre>
+  Above is:
+  routing example
+</pre>
+
+<app-simple-http-client></app-simple-http-client>
 <app-demo-form-sku></app-demo-form-sku>>
 
 <div class="container">

@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown'
 import { TooltipModule } from 'ngx-bootstrap/tooltip'
@@ -21,6 +23,33 @@ import { ProductImageComponent } from './product-image/product-image.component';
 import { PriceDisplayComponent } from './price-display/price-display.component';
 import { ProductDepartmentComponent } from './product-department/product-department.component';
 import { DemoFormSkuComponent } from './demo-form-sku/demo-form-sku.component';
+import { SimpleHttpClientComponent } from './simple-http-client/simple-http-client.component';
+
+const childRoutes: Routes = []
+const LoggedInGuard: Routes = []
+
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: ProductsListComponent},
+  { path: 'about', component: DemoFormSkuComponent },
+  { path: 'contact', component: SimpleHttpClientComponent },
+  { path: 'contactus', redirectTo: 'contact'},
+
+  { path: 'login', component: IbtidaComponent },
+  {
+    path: 'protected',
+    component: SimpleHttpClientComponent,
+    canActivate: [ LoggedInGuard ]
+  },
+
+  {
+    path: 'products',
+    component: ProductsListComponent,
+    children: childRoutes
+  }
+];
+
+
 
 @NgModule({
   declarations: [
@@ -36,15 +65,18 @@ import { DemoFormSkuComponent } from './demo-form-sku/demo-form-sku.component';
     PriceDisplayComponent,
     ProductDepartmentComponent,
     DemoFormSkuComponent,
+    SimpleHttpClientComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    HttpClientModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
+    RouterModule.forRoot(routes),
   ],
   exports: [BsDropdownModule,TooltipModule,ModalModule],
   providers: [],
