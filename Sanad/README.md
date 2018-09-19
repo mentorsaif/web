@@ -25,3 +25,28 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Important resources to follow-up:
+Good projects to learn from:
+https://www.pluralsight.com/blog/software-development/10-angular-and-typescript-projects-to-take-you-from-zero-to-hero
+->Good project to get hold on asp.net core with angular https://github.com/DanWahlin/AspNetCorePostgreSQLDockerApp
+
+Good angular projects to explore:
+https://medium.com/aviabird/10-amazing-open-source-angular-2-x-apps-825fb169dce3
+
+ngrx/platform
+https://github.com/ngrx/platform
+
+Material angular
+https://material.angular.io/
+
+Clarity by vmware
+https://vmware.github.io/clarity/
+
+JAMStack
+
+netlify-cms
+https://github.com/netlify/netlify-cms/blob/master/CONTRIBUTING.md
+
+keynoteJS
+https://github.com/keystonejs/keystone/blob/master/README.md

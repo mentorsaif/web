@@ -24,6 +24,9 @@ import { PriceDisplayComponent } from './price-display/price-display.component';
 import { ProductDepartmentComponent } from './product-department/product-department.component';
 import { DemoFormSkuComponent } from './demo-form-sku/demo-form-sku.component';
 import { SimpleHttpClientComponent } from './simple-http-client/simple-http-client.component';
+import { IuserComponent } from './iuser/iuser.component';
+import { IthreadComponent } from './ithread/ithread.component';
+import { ImessageComponent } from './imessage/imessage.component';
 
 const childRoutes: Routes = []
 const LoggedInGuard: Routes = []
@@ -66,6 +69,9 @@ const routes: Routes = [
     ProductDepartmentComponent,
     DemoFormSkuComponent,
     SimpleHttpClientComponent,
+    IuserComponent,
+    IthreadComponent,
+    ImessageComponent,
   ],
   imports: [
     BrowserModule,
