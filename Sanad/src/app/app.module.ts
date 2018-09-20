@@ -27,6 +27,7 @@ import { SimpleHttpClientComponent } from './simple-http-client/simple-http-clie
 import { IuserComponent } from './iuser/iuser.component';
 import { IthreadComponent } from './ithread/ithread.component';
 import { ImessageComponent } from './imessage/imessage.component';
+import { SpotifyServiceComponent } from './spotify-service/spotify-service.component';
 
 const childRoutes: Routes = []
 const LoggedInGuard: Routes = []
@@ -72,6 +73,7 @@ const routes: Routes = [
     IuserComponent,
     IthreadComponent,
     ImessageComponent,
+    SpotifyServiceComponent,
   ],
   imports: [
     BrowserModule,
